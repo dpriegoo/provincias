@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">provincias</string>
+    <string-array name="provincias">
+        <item name="sevilla">Sevilla</item>
+        <item name="cadiz">Cadiz</item>
+        <item name="malaga">Malaga</item>
+        <item name="huelva">Huelva</item>
+        <item name="cordoba">Cordoba</item>
+        <item name="granada">Granada</item>
+        <item name="almeria">Almeria</item>
+    </string-array>
+
+
+</resources>
