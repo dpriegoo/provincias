@@ -16,13 +16,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Spinner lstProvincias = findViewById(R.id.spinner);
         ImageView sevilla = findViewById(R.id.sevillaView);
-    }
 
-    private void provincias (Spinner lstProvincias, ImageView sevilla){
+
+
+
 
         lstProvincias.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+
+
+               provincias(i, sevilla);
+
 
             }
 
@@ -31,5 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+}
+    private void provincias (int i, ImageView sevilla){
+        switch (i){
+            case 0:
+                sevilla.setImageResource(R.drawable.sevilla);
+                break;
+
+            case 3:
+                sevilla.setImageResource(R.drawable.huelva);
+                break;
+
+        }
     }
 }
